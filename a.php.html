@@ -1,0 +1,14 @@
+<html>
+<body>
+    <div id="popup"></div>
+    <script src="http://wufoo.com/scripts/iframe/formEmbedKit.js"></script>
+    <script>
+        var wufoo_framework = WufooFormEmbedKit({'userDefinedCallback':userDefinedCallback, 'displayElement':'popup'});
+        wufoo_framework.display();
+        function userDefinedCallback(message) {
+            alert(message);
+            wufoo_framework.destroy();
+        }
+    </script>
+</body>
+</html>
